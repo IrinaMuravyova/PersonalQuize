@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		883EF30C2ACBDA0100AAFB45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883EF30B2ACBDA0100AAFB45 /* AppDelegate.swift */; };
 		883EF30E2ACBDA0100AAFB45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883EF30D2ACBDA0100AAFB45 /* SceneDelegate.swift */; };
-		883EF3102ACBDA0100AAFB45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883EF30F2ACBDA0100AAFB45 /* ViewController.swift */; };
+		883EF3102ACBDA0100AAFB45 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883EF30F2ACBDA0100AAFB45 /* QuestionViewController.swift */; };
 		883EF3132ACBDA0100AAFB45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883EF3112ACBDA0100AAFB45 /* Main.storyboard */; };
 		883EF3152ACBDA0200AAFB45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 883EF3142ACBDA0200AAFB45 /* Assets.xcassets */; };
 		883EF3182ACBDA0200AAFB45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883EF3162ACBDA0200AAFB45 /* LaunchScreen.storyboard */; };
 		88EF37E32ACEADD00094901D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EF37E22ACEADD00094901D /* Question.swift */; };
+		88EF37E82ACEC1F10094901D /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EF37E72ACEC1F10094901D /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		883EF3082ACBDA0100AAFB45 /* PersonalQuize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalQuize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		883EF30B2ACBDA0100AAFB45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		883EF30D2ACBDA0100AAFB45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		883EF30F2ACBDA0100AAFB45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		883EF30F2ACBDA0100AAFB45 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		883EF3122ACBDA0100AAFB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		883EF3142ACBDA0200AAFB45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		883EF3172ACBDA0200AAFB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		883EF3192ACBDA0200AAFB45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88EF37E22ACEADD00094901D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		88EF37E72ACEC1F10094901D /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +90,8 @@
 		88EF37E52ACEADEF0094901D /* ViewControlls */ = {
 			isa = PBXGroup;
 			children = (
-				883EF30F2ACBDA0100AAFB45 /* ViewController.swift */,
+				883EF30F2ACBDA0100AAFB45 /* QuestionViewController.swift */,
+				88EF37E72ACEC1F10094901D /* ResultViewController.swift */,
 			);
 			path = ViewControlls;
 			sourceTree = "<group>";
@@ -173,7 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				883EF3102ACBDA0100AAFB45 /* ViewController.swift in Sources */,
+				88EF37E82ACEC1F10094901D /* ResultViewController.swift in Sources */,
+				883EF3102ACBDA0100AAFB45 /* QuestionViewController.swift in Sources */,
 				88EF37E32ACEADD00094901D /* Question.swift in Sources */,
 				883EF30C2ACBDA0100AAFB45 /* AppDelegate.swift in Sources */,
 				883EF30E2ACBDA0100AAFB45 /* SceneDelegate.swift in Sources */,

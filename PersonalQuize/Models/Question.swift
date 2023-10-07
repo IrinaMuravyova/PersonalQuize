@@ -11,7 +11,7 @@ struct Question {
     let typeQuestion: ResponseType
     let answers: [Answer]
     
-    func getQuestions() -> [Question] {
+    static func getQuestions() -> [Question] {
         [
             Question(title: "Какую пишу Вы предпочитаете ?",
                      typeQuestion: .single,
@@ -20,7 +20,7 @@ struct Question {
                                Answer(title: "Морковь", animal: .rabbit),
                                Answer(title: "Кукуруза", animal: .turtle)
                               ]),
-            Question(title: "Какую пишу Вы предпочитаете ?",
+            Question(title: "Чем Вам нравится заниматься ?",
                      typeQuestion: .multiple,
                      answers: [Answer(title: "Плавать", animal: .turtle),
                                Answer(title: "Спать", animal: .cat),
@@ -62,7 +62,7 @@ enum Animal: Character {
         case .rabbit:
             return "Вам нравится всё мягкое. Вы здоровы и полны энергии."
         case .turtle:
-            return "Ваша сила - в мудрости. Медленный и вдумчивые выигрывает на больших дистанциях."
+            return "Ваша сила - в мудрости. Медленный и вдумчивый выигрывает на больших дистанциях."
         }
     }
 }
