@@ -12,10 +12,10 @@ class ResultViewController: UIViewController {
     @IBOutlet var resultLable: UILabel!
     @IBOutlet var definitionLabel: UILabel!
     
-    var yourAnimal: Animal!
     var userAnswers: [Answer]!
     
-    var animalsCount: [Animal: Int] = [:]
+    private var animalsCount: [Animal: Int] = [:]
+    private var yourAnimal: Animal!
 
     override func viewDidLoad() {
         super.viewDidLoad()
