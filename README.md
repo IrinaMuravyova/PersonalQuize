@@ -65,12 +65,14 @@
   #### Methods:
   
   ***DonePressed*** -
+  
   ***calculateResult*** -
+  
   ***showResult*** - 
 
 ### Models:
 
-**Question** - 
+  **Question** - 
 
 
 
