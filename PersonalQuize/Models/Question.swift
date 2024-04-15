@@ -24,7 +24,7 @@ struct Question {
                      typeQuestion: .multiple,
                      answers: [Answer(title: "Плавать", animal: .turtle),
                                Answer(title: "Спать", animal: .cat),
-                               Answer(title: "Обниваться", animal: .rabbit),
+                               Answer(title: "Обниматься", animal: .rabbit),
                                Answer(title: "Есть", animal: .dog)]),
             Question(title: "Любите ли Вы поездки на машине ?",
                      typeQuestion: .rangered,
