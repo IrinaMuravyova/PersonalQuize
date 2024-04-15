@@ -15,21 +15,20 @@
 **В проекте используются:**
 
 * MVC архитектура
-* проверка логина/пароля пользователя, loguot
+* размещение элементов интерфейса с помошью Storyboard
 * переход между экранами
 * передача данных с одного экрана на другой через prepare
-* заливка градиентом
-* UITabBarController
-* работа с клавиатурой
-* алерты
+* NavigationController
 
 
 ### Техническое задание к проекту:
 
-Передать массив с ответами на экран с результатами
-Определить наиболее часто встречающийся тип животного
-Отобразить результаты в соотвствии с этим животным
-Избавиться от кнопки возврата назад на экране результатов
+Приложение состоит из нескольких экранов.
+Стартовый экран статичный, на нем мы запускаем опрос.
+Следующий экран с динамическим интерфейсом открывается через модальный переход на NavigationController.
+Динамический экран содержит progress view, вопросы и соответсвующие им атрибуты сменяются на этом же экране.
+Возврат на первый экран через кнопку Done. Кнопка Done располагается на экране с результатами теста.
+На экране результатов не должно быть кнопки возврата назад.
 
 
 ![screenshot of sample](https://i.ibb.co/gmBSfGm/Personal-Quize.jpg)
@@ -38,32 +37,40 @@
 
 ### ViewControllers:
 
-* LoginViewController - отвечает за авторизацию пользователя.
+* QuestionViewController - 
      
   #### Methods:
   
-  ***forgotUserNameButtonDidTap*** - выводит алерт с напоминанием имени пользователя
+  ***singleAnswerButtonPressed*** - 
   
-  ***forgotPasswordButtonTapped*** - выводит алерт с напоминание пароля
+  ***multipleAnswerButtonPressed*** - 
   
-  ***logInButtonTapped*** - срабатывает по нажатию кнопки Login и содержит проверку логин/пароля
+  ***rangedAnswerButtonPressed*** - 
   
-  ***sendAlert*** - настраивает шаблон алертов
+  ***QuestionViewController*** -
   
-* WelcomeViewController - отображает имя пользователя и кнопку логаута
-* PersonViewController - содержит ФИ пользователя, его фото и приветственые слова от него
-* TabBarController - настройки TabBar
-* BioViewController - включает биографические данные пользователя
-* ExperienceViewController - описывает рабочий опыт пользователя
-* GradientView - устанавливает градиент
+  ***showCurrentAnswers*** -
+  
+  ***showSingleQuestion*** -
+
+  ***nextQuestion*** -
+
+  ***showMultilpeQuestion*** -
+
+  ***showRangedQuestion*** -
+  
+  
+* ResultViewController - отображает имя пользователя и кнопку логаута
        
   #### Methods:
   
-  ***setupGradient***
+  ***DonePressed*** -
+  ***calculateResult*** -
+  ***showResult*** - 
 
 ### Models:
 
-**User** - задает логин и пароль для входа в приложение, содержит индивидуальные данные пользователя для наполнения Views
+**Question** - 
 
 
 
@@ -72,4 +79,4 @@
 - [Irina Muravyova](https://github.com/IrinaMuravyova)
 
 ## License
-Project YandexAlgoritms is distributed under the MIT license.
+Project PersonalQuize is distributed under the MIT license.
