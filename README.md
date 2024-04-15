@@ -19,6 +19,7 @@
 * переход между экранами по сегвею и кодом
 * передача данных с одного экрана на другой через prepare
 * NavigationController
+* работа с массивами
 
 
 ### Техническое задание к проекту:
@@ -37,44 +38,48 @@
 
 ### ViewControllers:
 
-* QuestionViewController - 
+* QuestionViewController - отвечает за логику динамического экрана с вопросами
      
   #### Methods:
   
-  ***singleAnswerButtonPressed*** - 
+  ***singleAnswerButtonPressed*** - вызывается, когда пользователь нажимает один из вариантов ответа на первый вопрос
   
-  ***multipleAnswerButtonPressed*** - 
+  ***multipleAnswerButtonPressed*** - вызывается, когда пользователь нажимает "Ответить" во втором вопросе
   
-  ***rangedAnswerButtonPressed*** - 
-  
-  ***QuestionViewController*** -
-  
-  ***showCurrentAnswers*** -
-  
-  ***showSingleQuestion*** -
+  ***rangedAnswerButtonPressed*** - вызывается, когда пользователь нажимает "Ответить" в третьем вопросе
 
-  ***nextQuestion*** -
+  ***updateUI*** - скрывает ненужные элементы интерфейса динамического экрана, актуализирует progressBar и текс в NavigationBar
+  
+  ***showCurrentAnswers*** - вызывает нужный метод для отображения элементов интерфейса в зависимости от типа вопроса
+  
+  ***showSingleQuestion*** - показывает элементы интерфейса для первого вопроса
 
-  ***showMultilpeQuestion*** -
+  ***nextQuestion*** - сохраняет номер текущего вопроса и обновляет интерфейс
 
-  ***showRangedQuestion*** -
+  ***showMultilpeQuestion*** - показывает элементы интерфейса для второго вопроса
+
+  ***showRangedQuestion*** - показывает элементы интерфейса для третьего вопроса
   
   
-* ResultViewController - отображает имя пользователя и кнопку логаута
+* ResultViewController - отвечает за логику экрана с результатом опроса
        
   #### Methods:
   
-  ***DonePressed*** -
+  ***DonePressed*** - возвращение к первому экрану
   
-  ***calculateResult*** -
+  ***calculateResult*** - просматривает все ответы и подсчитывает ответов для какого животного было больше
   
-  ***showResult*** - 
+  ***showResult*** - отображение результата теста на экране
 
 ### Models:
 
 Все модели расположены в файле "Question.swift"
 
   ***Question*** - основная модель данных.
+  
+        Methods:
+        
+            getQuestions - содержит данные вопросов
   
   ***ResponseType*** - категории вопросов и ответов
   
